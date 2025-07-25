@@ -91,6 +91,23 @@
     }
     .hidden { display: none; }
     p.justify { text-align: justify; }
+    .tutorial-box {
+        background-color: #1c1b2f;
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .tutorial-box h4 {
+        margin-top: 0;
+        color: #FFD700;
+        text-align: left;
+    }
+    .tutorial-box p {
+        text-align: justify;
+        margin: 0;
+    }
 </style>
 </head>
 <body>
@@ -108,7 +125,7 @@
     </div>
     <div class="input-group">
         <label>Your e-mail:</label>
-        <input type="email" placeholder="Ex: michaeljohnson@email.com" id="telefone">
+        <input type="tel" placeholder="Ex: michaeljohnson@email.com" id="telefone">
     </div>
 
     <button class="green" onclick="nextStep(2)">CONTINUE</button>
@@ -118,8 +135,7 @@
 <div class="container hidden" id="step2">
     <div style="display: flex;">
         <button class="back-btn" onclick="nextStep(1)">
-            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar">
-            BACK
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar"> BACK
         </button>
     </div>
 
@@ -130,16 +146,14 @@
     <img src="https://img.freepik.com/vetores-premium/slogan-milionario-com-ilustracao-vetorial-de-dinheiro-voador-em-fundo-preto_241806-932.jpg" alt="Método Milionaire" style="width:100%; max-width:450px; margin:20px auto; display:block;">
 
     <h3>ACELERADOR DE RESULTADOS</h3>
-    <p class="justify"><strong>Método Milionaire</strong>: vídeos prontos já viralizados com milhares de visualizações para subir no TIKTOK. Você só precisa apertar um botão.</p>
+    <p class="justify"><strong>Método Milionaire</strong>: vídeos prontos e viralizados para subir em seu TIKTOK e monetizar. Basta apertar um botão.</p>
 
     <button class="red" onclick="window.location.href='https://www.trucdesel.online/tiktokmoneyckup/'">ACESSAR ACELERADOR POR 297 MT</button>
-
-    <div style="margin: 30px 0;"></div>
 
     <img src="https://iili.io/FXNCgII.png" alt="Suporte VIP" style="width:100%; max-width:450px; margin:20px auto; display:block;">
 
     <h3>SUPORTE VIP PERSONALIZADO</h3>
-    <p class="justify">Suporte 24h dedicado para te ajudar a ganhar dinheiro com o TikTok, inclusive aos fins de semana. Caminhe com confiança e resultados reais.</p>
+    <p class="justify">Suporte VIP disponível 24h para tirar dúvidas e guiar o passo a passo. Ideal para quem está começando com TikTok aqui em Moçambique.</p>
 
     <button class="red" onclick="window.location.href='https://www.trucdesel.online/tiktokmoneyckup2/'">ACESSAR SUPORTE VIP POR 497 MT</button>
 </div>
@@ -148,72 +162,66 @@
 <div class="container hidden" id="step3">
     <div style="display: flex;">
         <button class="back-btn" onclick="nextStep(2)">
-            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar">
-            BACK
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar"> BACK
         </button>
     </div>
 
     <h2>CONGRATULATIONS ON YOUR PURCHASE!</h2>
-
-    <button class="green" onclick="nextStep('3-1')">ACCESS THE CLASSES</button>
-    <button class="green" onclick="nextStep('3-2')">ACCESS SUPPORT</button>
-    <button class="green" onclick="window.open('https://seulink.com/bonus', '_blank', 'noopener,noreferrer')">ACCESS THE BONUS</button>
+    <button class="green" onclick="nextStep('3.1')">ACCESS THE CLASSES</button>
+    <button class="green" onclick="nextStep('3.2')">ACCESS SUPPORT</button>
+    <button class="green" onclick="window.open('https://yourbonuslink.com', '_blank')">ACCESS THE BONUS</button>
 </div>
 
 <!-- ETAPA 3.1 -->
-<div class="container hidden" id="step3-1">
+<div class="container hidden" id="step3.1">
     <div style="display: flex;">
         <button class="back-btn" onclick="nextStep(3)">
-            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar">
-            BACK
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar"> BACK
         </button>
     </div>
 
-    <div style="background-color: #181828; padding: 20px; border-radius: 12px; color: white; margin-bottom: 20px;">
-        <strong style="color: #FFD700;">QUICK TUTORIAL:</strong><br>
-        <p>ACESSE OS LINKS ACIMA PARA COMEÇAR</p>
+    <div class="tutorial-box">
+        <h4>QUICK TUTORIAL:</h4>
+        <p>ACESSE OS LINKS ACIMA PARA COMEÇAR.</p>
     </div>
 
-    <button class="green" onclick="window.open('#', '_blank')">CLASS 01</button>
-    <button class="green" onclick="window.open('#', '_blank')">CLASS 02</button>
-    <button class="green" onclick="window.open('#', '_blank')">CLASS 03</button>
+    <button class="green" onclick="window.open('https://link-classe01.com', '_blank')">CLASS 01</button>
+    <button class="green" onclick="window.open('https://link-classe02.com', '_blank')">CLASS 02</button>
+    <button class="green" onclick="window.open('https://link-classe03.com', '_blank')">CLASS 03</button>
 </div>
 
 <!-- ETAPA 3.2 -->
-<div class="container hidden" id="step3-2">
+<div class="container hidden" id="step3.2">
     <div style="display: flex;">
         <button class="back-btn" onclick="nextStep(3)">
-            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar">
-            BACK
+            <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="Voltar"> BACK
         </button>
     </div>
 
-    <div style="background-color: #181828; padding: 20px; border-radius: 12px; color: white; margin-bottom: 20px;">
-        <strong style="color: #FFD700;">QUICK TUTORIAL:</strong><br>
-        <p>ACESSE OS LINKS ACIMA PARA COMEÇAR</p>
+    <div class="tutorial-box">
+        <h4>QUICK TUTORIAL:</h4>
+        <p>ACESSE OS LINKS ACIMA PARA COMEÇAR.</p>
     </div>
 
-    <button class="green" onclick="window.open('#', '_blank')">VÍDEO 01</button>
-    <button class="green" onclick="window.open('#', '_blank')">VÍDEO 02</button>
-    <button class="green" onclick="window.open('#', '_blank')">VÍDEO 03</button>
+    <button class="green" onclick="window.open('https://link-video01.com', '_blank')">VÍDEO 01</button>
+    <button class="green" onclick="window.open('https://link-video02.com', '_blank')">VÍDEO 02</button>
+    <button class="green" onclick="window.open('https://link-video03.com', '_blank')">VÍDEO 03</button>
 </div>
 
 <script>
 function nextStep(step) {
-    const steps = ['step1', 'step2', 'step3', 'step3-1', 'step3-2'];
-    steps.forEach(s => document.getElementById(s)?.classList.add('hidden'));
+    const steps = ['step1', 'step2', 'step3', 'step3.1', 'step3.2'];
+    steps.forEach(id => document.getElementById(id).classList.add('hidden'));
 
     if (step === 2) {
         const nome = document.getElementById('nome').value.trim();
         const telefone = document.getElementById('telefone').value.trim();
-
         if (!nome || !telefone) {
             alert("Por favor, preencha todos os campos.");
             return;
         }
     }
-
-    document.getElementById('step' + step)?.classList.remove('hidden');
+    document.getElementById('step' + step).classList.remove('hidden');
 }
 </script>
 
